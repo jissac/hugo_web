@@ -1,4 +1,4 @@
-baseURL = "https://james.me"
+baseURL = "https://jamesis.me"
 languageCode = "en-us"
 title = "James Issac"
 theme = "beautifulhugo"
@@ -9,7 +9,7 @@ homeTitle = "Hi! I'm James."
 subtitle = "Thanks for dropping by. Here are some technical and creative things I'm interested in."
 logo="/imgs/tiger.jpg"
 dateFormat = "January 2, 2018"
-
+text="Many elves in lungis are working hard to format this site. Coming soon!"
 [Author]
 name="James Issac"
 github="jissac"
@@ -19,12 +19,12 @@ linkedin="jissac1"
 [[menu.main]]
     name = "Tags"
     subtitle = "stuff"
-    url = "tags"
+    url = ""
     weight = 1
 
 [[menu.main]]
     name = "Blog"
-    url = "/post/first-post"
+    url = ""
     weight = 1
 
 [[menu.main]]
