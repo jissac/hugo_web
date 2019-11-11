@@ -1,43 +1,43 @@
 baseURL = "https://jamesis.me"
 languageCode = "en-us"
 title = "James Issac"
-theme = "beautifulhugo"
+theme = "hugo-academic"
 
 [Params]
 
 homeTitle = "Hi! I'm James."
-subtitle = "Thanks for dropping by. Here are some technical and creative things I'm interested in."
-logo="/imgs/tiger.jpg"
-dateFormat = "January 2, 2018"
-text="Many elves in lungis are working hard to format this site. Coming soon!"
+subtitle = "Thanks for dropping by! Here are some technical and creative things I'm interested in."
+logo="/imgs/james.jpeg"
+
 [Author]
 name="James Issac"
 github="jissac"
 twitter="james_issac_"
 linkedin="jissac1"
+instagram="melodious707"
 
 [[menu.main]]
     name = "Tags"
     subtitle = "stuff"
-    url = ""
+    url = "tags/"
     weight = 1
 
 [[menu.main]]
     name = "Blog"
-    url = ""
+    url = "post/"
     weight = 1
 
-[[menu.main]]
-    name = "Projects"
-    url = ""
-    weight = 1
+#[[menu.main]]
+#    name = "Projects"
+#    url = ""
+#    weight = 1
 
-[[menu.main]]
-    name = "Photos"
-    url = ""
-    weight = 1
+#[[menu.main]]
+#    name = "Photos"
+#    url = ""
+#    weight = 1
 
-[[menu.main]]
-    name = "Books"
-    url = ""
-    weight = 1
+#[[menu.main]]
+#    name = "Books"
+#    url = ""
+#    weight = 1
