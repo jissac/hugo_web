@@ -5,3 +5,6 @@
 	path = public
 	url = https://github.com/jissac/jissac.github.io.git
 	branch = master
+[submodule "themes/hugo-academic"]
+	path = themes/hugo-academic
+	url = https://github.com/gcushen/hugo-academic.git
