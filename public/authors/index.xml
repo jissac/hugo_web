@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | James Issac</title>
+    <link>https://jamesis.me/authors/</link>
+      <atom:link href="https://jamesis.me/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 James Issac</copyright><lastBuildDate>Fri, 21 Mar 2014 21:02:31 -0500</lastBuildDate>
+    <item>
+      <title>James Issac</title>
+      <link>https://jamesis.me/authors/james-issac/</link>
+      <pubDate>Fri, 21 Mar 2014 21:02:31 -0500</pubDate>
+      <guid>https://jamesis.me/authors/james-issac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jamesis.me/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jamesis.me/authors/admin/</guid>
+      <description>&lt;p&gt;Glad you dropped by! Here are some technical and creative things I&amp;rsquo;m intersted in. Feel free to get in touch if you&amp;rsquo;d like to have a fireside chat.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
