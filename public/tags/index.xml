@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | James Issac</title>
+    <link>https://jamesis.me/tags/</link>
+      <atom:link href="https://jamesis.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 James Issac</copyright><lastBuildDate>Fri, 30 Sep 2016 22:21:31 -0500</lastBuildDate>
+    <image>
+      <url>https://jamesis.me/img/icon-192.png</url>
+      <title>Tags</title>
+      <link>https://jamesis.me/tags/</link>
+    </image>
+    
+    <item>
+      <title>travel</title>
+      <link>https://jamesis.me/tags/travel/</link>
+      <pubDate>Fri, 30 Sep 2016 22:21:31 -0500</pubDate>
+      <guid>https://jamesis.me/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photography</title>
+      <link>https://jamesis.me/tags/photography/</link>
+      <pubDate>Fri, 14 Mar 2014 00:31:33 -0500</pubDate>
+      <guid>https://jamesis.me/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
