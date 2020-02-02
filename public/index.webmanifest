@@ -2,8 +2,8 @@
   "name": "James Issac",
   "short_name": "James Issac",
   "lang": "en-us",
-  "theme_color": "rgb(120,231,182)",
-  "background_color": "rgb(120,231,182)",
+  "theme_color": "rgb(53,219,146)",
+  "background_color": "rgb(53,219,146)",
   "icons": [{
     "src": "../img/icon-192.png",
     "sizes": "192x192",
