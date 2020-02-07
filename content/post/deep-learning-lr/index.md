@@ -75,8 +75,46 @@ We want to model a function that can take in any number of inputs and constrain 
 
 ### Loss Function and Cost Function
 Let’s define *y* as the true label (y = 0 or y = 1) and *y_hat* as the predicted output (or the probability that y = 1 given inputs w and x). Therefore, the probability that y = 0 given inputs *w* and *x* is (1 - *y_hat*), as shown below.
+![Loss probability](loss-prob.png)
+[After doing some derivations](http://cs229.stanford.edu/notes/cs229-notes1.pdf) based on the equations above, we can define the logistic loss function for a set of inputs in a single training example to be:
+![Log loss](log-loss.png)
 
+The goal of the loss function is to minimize the error between the predicted and desired output and thus arrive at an optimal solution for one training example. However, to get useful results we need to take the average of the loss function over an entire training set that contains many examples (for a total of m examples). This is defined as the cost function ***J(w,b)*** and we’ll find the parameters ***w*** and ***b*** that minimize the overall cost function:
+![cost fn](cost-fn.png)
 
+### Gradient Descent
+Plotting the cost function ***J(w,b)*** yields a graph that looks like this:
+![gradient-descent](gradient-descent.png)
+One of the reasons we use this cost function for logistic regression is that it’s a convex function with a single global optimum. Imagine rolling a ball down the bowl-shaped function — it would settle at the bottom; similarly, to find the minimum of the cost function, we need to get to the lowest point. To do that, we can start from anywhere on the function and iteratively move down in the direction of the steepest slope, adjusting the values of w and b that lead us to the minimum. The formulas are:
+![gd-formula](gd-formula.png)
+In these two equations, the partial derivatives *dw* and *db* represent the effect that a change in *w* and *b* have on the cost function, respectively. By finding the slope and taking the negative of that slope, we ensure that we will always move in the direction of the minimum. To get a better understanding, let’s see this graphically for *dw*:
+![gd-graph](gd-graph.png)
+When the derivative term is positive, we move in the opposite direction towards a decreasing value of w and when the derivative is negative we move in the direction of increasing w, thereby ensuring that we’re always moving toward the minimum.
+
+The alpha term in front of the partial derivative is called the learning rate and is a measure of how big a step to take at each iteration. The choice of learning parameters is an important one — too small and the model will take an undue amount of time to find the minimum, too large and the model might overshoot the minimum and fail to converge.
+
+Gradient descent is the essence of the learning process — through it the machine learns what values of weights and biases minimize the cost function. It does this by iteratively comparing its predicted output for a set of data to the true output in a process called training.
+
+## Training a Model
+An athlete is able to perform at a high level because of her extensive training — through repeated iterations and adjustments along the way, she’s able to figure out what works and what doesn’t. Similarly in supervised machine learning, given a set of inputs and output labels, a model learns the best combination of weights and biases that minimizes the overall cost function. 
+
+(On a high level — when people talk about machine intelligence, it’s important to distinguish between this idea of learning as opposed to the more abstract idea of artificial consciousness, which is harder to quantify. The advanced feats we’ve seen machines do thus far have basically been examples of clever optimization techniques). So what does this learning process look like?
+
+### Forward Propagation
+First, weight and bias values are propagated forward through the model to arrive at a predicted output. At each neuron/node, the linear combination of the inputs is then multiplied by an activation function as described above— the sigmoid function in our example. This process by which weights and biases are propagated from inputs to output is called forward propagation. After arriving at the predicted output, the loss for the training example is calculated. This left-to-right process for a single example is represented in the computation graph below (recall that the prediction *y_hat* equals *A*):
+![forward-prop](forward-prop.png)
+### Backward Propagation
+We previously saw how the gradient descent algorithm allows us to find the minimum of the cost function. Back propagation is the process of calculating the partial derivatives from the loss function back to the inputs, thereby updating the values of w and b that lead us to the minimum. It’s helpful writing out the partial derivatives starting from *dA* to see how to arrive at *dw* and *db*. Using the chain rule of calculus yields:
+![chain-rule](chain-rule.png)
+This right-to-left process that results in updated parameters w and b is represented in the computation graph below, where the results of the derivations are shown:
+![back-prop](back-prop.png)
+### Prediction
+After finding the optimal values of *w* and *b* after a certain number of iterations, the next step is to use those values to calculate the final predicted output. The sigmoid activation function yields a probability distribution between 0 and 1 — for logistic regression we need to convert that to a discrete value of either 0 or 1. To do so, we’ll apply a threshold value to the output, 0.5 for instance, so that probability values 0.5 or above result in a predicted output value of 1, whereas probability values less than 0.5 result in a predicted output value of 0.
+
+After predicting the final output, we need to see how well the model did. One way to evaluate classification models is by defining a term called accuracy. It’s the fraction of the predictions that our model got right:
+![accuracy](accuracy.png)
+The figure below summarizes the iterative process through which the machine learns:
+![overall training](model-train.png)
 ## Practical Example
 Alright, enough theory, time for application! Remember the cat vs. dog classification problem — given an image of either a cat or a dog, will the computer be able to classify it as one or the other? Let’s implement a single layer neural net representation of logistic regression from scratch using Python. We’ll use Kaggle’s dogs vs. cats dataset and build the model step by step: I’ve created a [Github repository called ScratchML that contains the CatsvsDogs_Logistic_Regression Jupyter notebook](https://github.com/jissac/ScratchML). We’ll go through preparing and pre-processing the data (often the most time-consuming part of the journey) and then define and run our model. Try to understand what each method does and how the formulas above are being implemented. Then re-write them yourself in order to build your intuition.
 After training and running the model, our humble representation of logistic regression managed to get around 69% of the test set correctly classified — not bad for a single layer neural network! Using cutting edge architectures will yield world-class results — but they are built using much of the same principles we learned implementing logistic regression.
