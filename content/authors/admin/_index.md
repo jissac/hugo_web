@@ -75,4 +75,4 @@ social:
 #- Visitors
 ---
 
-Glad you dropped by! Here are some technical and creative things I'm intersted in. Feel free to get in touch and we can have a nice fireside chat. :fire:
+Glad you dropped by! Here are some technical and creative things I'm interested in. 

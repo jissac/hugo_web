@@ -27,3 +27,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+Grouping is a fundamental idea in data science - one that helps the data scientist glean overall insights from seemingly disjointed data elements. In this article, we'll take a look at how to group data elements using both the Python Pandas library as well as the distributed computing framework PySpark.
+
+## Grouping in Pandas
+In the Python library Pandas, the concept of grouping is often mentioned in the overall context of the term "split-combine-apply".
+
+## Grouping in PySpark
