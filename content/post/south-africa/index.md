@@ -5,7 +5,7 @@ title: "South Africa: A Collection of Haikus"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
+tags: [travel]
 categories: []
 date: 2019-12-01T16:34:24-05:00
 lastmod: 2019-12-01T16:34:24-05:00
@@ -38,7 +38,7 @@ Am I in heaven?
 ![shells](shells.jpg)
 Seashells by the beach       
 Waves crash, mussels grow, splish splash         
-Sand gets in my toes        
+Sand between my toes        
 ![safari](safari.jpg)
 The best time to think      
 Is on a safari ride       
