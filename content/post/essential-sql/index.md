@@ -139,6 +139,7 @@ If you make a mistake creating a table using the command `DROP TABLE table_name`
 
 *I hope this gets you started on your SQL journey. As always, there’s much more to learn and queries can become quite complicated. However, these basics will guide you as you practice — so here’s to more querying!*
 ## Resources:
-- These are my notes from the excellent DataQuest learning track. Check them out and subscribe at www.dataquest.io
+- These are my notes from the DataQuest learning track. Check them out and subscribe at www.dataquest.io
+- Check out Luke Harrison's excellent SQL Cheat Sheet: https://websitesetup.org/sql-cheat-sheet/      
 - For a complete list of SQL commands, check out: https://www.tutorialspoint.com/sqlite
 - A SQL style guide: https://www.sqlstyle.guide/
