@@ -14,14 +14,16 @@
   weight = 20
 
 [[main]]
-  name = "Photos"
-  url = "#photos"
-  weight = 30
-
-[[main]]
   name = "Bookshelf"
-  url = "#books"
-  weight = 40
+  url = "#bookshelf"
+  weight = 30
+  
+[[main]]
+name = "Photos"
+url = "#photos"
+weight = 40
+
+
 
 
 # Link to a PDF of your resume/CV from the menu.

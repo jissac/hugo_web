@@ -10,18 +10,18 @@ authors:
 superuser: true
 
 # Role/position
-role: Data Scientist
+# role: Data Scientist
 
 # Organizations/Affiliations
-organizations:
-- name: Michigan, USA
-  url: ""
+# organizations:
+# - name: Michigan, USA
+#   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My interests include data analytics, machine learning, and scalable computing.
+bio: A whole new world, that's where we'll be.
 
 interests:
-- Data Analytics / Machine Learning
+- Machine Learning Applications in Healthcare
 - Guitar and Piano Playing
 - Hiking
 - Portrait and Street Photography
