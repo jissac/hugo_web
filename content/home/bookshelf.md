@@ -23,3 +23,4 @@ subtitle = "My reading list"
 * [The Power of Habit: Why We Do What We Do in Life and Business](https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X)
 * [Future Grace: The Purifying Power of the Promises of God](https://www.amazon.com/Future-Grace-Revised-Purifying-Promises/dp/1601424299/)
 * [Shoe Dog: A Memoir by the Creator of Nike](https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike-ebook/dp/B0176M1A44)
+* [Permanent Record](https://www.amazon.com/Permanent-Record-Edward-Snowden/dp/1250237238)

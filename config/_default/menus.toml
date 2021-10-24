@@ -19,7 +19,7 @@
   weight = 30
   
 [[main]]
-name = "Photos"
+name = "Art"
 url = "#photos"
 weight = 40
 
